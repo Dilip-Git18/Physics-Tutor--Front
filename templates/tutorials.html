@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section id="tutorials">
+    <h2>Physics Tutorials</h2>
+    <div class="tutorial">
+        <h3>Newton's Laws of Motion</h3>
+        <p>Understand the three laws of motion with interactive animations.</p>
+        <button onclick="window.location.href='newtons_laws.html'">Learn More</button>
+        <canvas id="newtonsLawChart"></canvas>
+    </div>
+    <div class="tutorial">
+        <h3>Electromagnetism</h3>
+        <p>Explore the relationship between electricity and magnetism with dynamic visuals.</p>
+        <button onclick="window.location.href='electromagnetism.html'">Learn More</button>
+        <canvas id="electromagnetismChart"></canvas>
+    </div>
+</section>
+{% endblock %}

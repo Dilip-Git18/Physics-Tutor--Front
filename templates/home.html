@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<section id="home" class="hero-section">
+    <div class="hero-content">
+        <h1>Welcome to Advanced Physics Tutor</h1>
+        <p>Your ultimate guide to mastering physics through interactive tutorials, quizzes, and more.</p>
+        <p>Explore a variety of topics, test your knowledge, and track your progress!</p>
+        <a href="{{ url_for('tutorials') }}" class="cta-button">Start Learning</a>
+    </div>
+</section>
+
+<section id="features" class="features-section">
+    <div class="feature-box">
+        <h3>Interactive Tutorials</h3>
+        <p>Learn complex physics concepts through interactive lessons and visuals.</p>
+    </div>
+    <div class="feature-box">
+        <h3>Engaging Quizzes</h3>
+        <p>Test your understanding with quizzes designed to challenge and reinforce your knowledge.</p>
+    </div>
+    <div class="feature-box">
+        <h3>Track Your Progress</h3>
+        <p>Monitor your performance and improve over time with our dynamic tracking system.</p>
+    </div>
+</section>
+
+<section id="testimonials" class="testimonials-section">
+    <h2>What Students Are Saying</h2>
+    <div class="testimonial-box">
+        <p>"This site made learning physics so much easier! The tutorials are clear, and the quizzes are a fun challenge." - Alex</p>
+    </div>
+    <div class="testimonial-box">
+        <p>"I love the interactive charts and the step-by-step guides. Highly recommend it to anyone struggling with physics!" - Maria</p>
+    </div>
+</section>
+{% endblock %}
