@@ -1,19 +1,54 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 
 {% block content %}
-<section id="tutorials">
-    <h2>Physics Tutorials</h2>
-    <div class="tutorial">
-        <h3>Newton's Laws of Motion</h3>
-        <p>Understand the three laws of motion with interactive animations.</p>
-        <button onclick="window.location.href='newtons_laws.html'">Learn More</button>
-        <canvas id="newtonsLawChart"></canvas>
-    </div>
-    <div class="tutorial">
-        <h3>Electromagnetism</h3>
-        <p>Explore the relationship between electricity and magnetism with dynamic visuals.</p>
-        <button onclick="window.location.href='electromagnetism.html'">Learn More</button>
-        <canvas id="electromagnetismChart"></canvas>
+<section class="tutorial-section">
+    <div class="container">
+        <h1>Physics Video Tutorials</h1>
+        <p>Watch in-depth video lessons to understand fundamental and advanced physics topics.</p>
+
+        <div class="video-grid">
+            <div class="video-item">
+                <a href="https://youtu.be/8o3j1wpabes" target="_blank">
+                    <img src="https://img.youtube.com/vi/8o3j1wpabes/hqdefault.jpg" alt="Advanced Physics Concepts" style="width:100%; border-radius: 8px;">
+                </a>
+                <h3>Newton's Laws of Motion</h3>
+            </div>
+
+            <div class="video-item">
+                <a href="https://youtu.be/198u1x8TBTo" target="_blank">
+                    <img src="https://img.youtube.com/vi/198u1x8TBTo/hqdefault.jpg" alt="Advanced Physics Concepts" style="width:100%; border-radius: 8px;">
+                </a>
+                <h3>Kinematics Basics</h3>
+            </div>
+
+            <div class="video-item">
+                <a href="https://youtu.be/Y-QOfc2XqOk" target="_blank">
+                    <img src="https://img.youtube.com/vi/Y-QOfc2XqOk/hqdefault.jpg" alt="Collisions: Crash Course Physics #10" style="width:100%; border-radius: 8px;">
+                </a>
+                <h3>Momentum & Collisions</h3>
+            </div>
+
+            <div class="video-item">
+                <a href="https://youtu.be/mc979OhitAg" target="_blank">
+                    <img src="https://img.youtube.com/vi/mc979OhitAg/hqdefault.jpg" alt="How Electricity Works - Engineering Mindset" style="width:100%; border-radius: 8px;">
+                </a>
+                <h3>How Electricity Works</h3>
+            </div>
+
+            <div class="video-item">
+                <a href="https://youtu.be/aCu4VRKMstA" target="_blank">
+                    <img src="https://img.youtube.com/vi/aCu4VRKMstA/hqdefault.jpg" alt="GCSE Physics - Intro to Waves" style="width:100%; border-radius: 8px;">
+                </a>
+                <h3>Intro to Waves</h3>
+            </div>
+
+            <div class="video-item">
+                <a href="https://youtu.be/4i1MUWJoI0U" target="_blank">
+                    <img src="https://img.youtube.com/vi/4i1MUWJoI0U/hqdefault.jpg" alt="Thermodynamics: Crash Course Physics #18" style="width:100%; border-radius: 8px;">
+                </a>
+                <h3>Thermodynamics</h3>
+            </div>
+        </div>
     </div>
 </section>
 {% endblock %}
