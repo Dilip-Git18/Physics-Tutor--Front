@@ -18,5 +18,9 @@ def quizzes():
 def contact():
     return render_template('contact.html')
 
+@app.route('/ask')
+def ask():
+    return render_template('ask.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

@@ -25,50 +25,6 @@ function startQuiz() {
   document.getElementById('quizResult').style.display = 'block';
 }
 
-// User Login Functionality (For demonstration)
-function loginUser(event) {
-  event.preventDefault();
-  
-  let username = document.getElementById('username').value;
-  let password = document.getElementById('password').value;
-
-  if (username === "user" && password === "password") {
-      alert("Login Successful!");
-      window.location.href = "#home"; // Redirect to home after login
-  } else {
-      alert("Invalid credentials.");
-  }
-}
-
-// Physics Tutorial Chart - Newton's Laws
-window.onload = function () {
-  var ctx = document.getElementById('newtonsLawChart').getContext('2d');
-  new Chart(ctx, {
-      type: 'bar',
-      data: {
-          labels: ['Force', 'Mass', 'Acceleration'],
-          datasets: [{
-              label: 'Newton\'s Laws of Motion',
-              data: [10, 5, 2], // Example data
-              backgroundColor: ['#3498db', '#2ecc71', '#f1c40f'],
-          }]
-      }
-  });
-
-  var ctx2 = document.getElementById('electromagnetismChart').getContext('2d');
-  new Chart(ctx2, {
-      type: 'line',
-      data: {
-          labels: ['0', '1', '2', '3', '4'],
-          datasets: [{
-              label: 'Electromagnetic Wave',
-              data: [1, 3, 2, 4, 5], // Example data
-              borderColor: '#e74c3c',
-              fill: false,
-          }]
-      }
-  });
-};
 
 
 // Quiz Logic
