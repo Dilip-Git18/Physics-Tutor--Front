@@ -10,9 +10,7 @@ def home():
 def tutorials():
     return render_template('tutorials.html')
 
-@app.route('/quizzes')
-def quizzes():
-    return render_template('quizzes.html')
+
 
 @app.route('/contact')
 def contact():
